@@ -6,7 +6,7 @@ class SingletonTS {
     this.version = version;
   }
 
-  static getInstance(version: string): SingletonTS {
+  public static getInstance(version: string): SingletonTS {
     if (!SingletonTS.instance) {
       SingletonTS.instance = new SingletonTS(version);
     }
